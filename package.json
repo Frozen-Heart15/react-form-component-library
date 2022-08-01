@@ -1,0 +1,61 @@
+{
+  "name": "@gaurav/react-form-component-library",
+  "version": "1.0.0",
+  "description": "a react library of form components",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepare": "npm run dist",
+    "dist": "rm -rf dist/* && babel src/ --out-dir dist --copy-files --no-copy-ignored --ignore src/**/*.stories.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frozen-Heart15/react-form-component-library.git"
+  },
+  "keywords": [
+    "react",
+    "form",
+    "library"
+  ],
+  "author": "Gaurav",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-transform-react-jsx": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "acorn-jsx": "^5.3.2",
+    "babel-loader": "^8.2.5",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "rollup": "^2.75.6",
+    "styled-components": "^5.3.5"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.7.0 <16.0.0",
+    "react": ">=16.8.0 <18.2.0",
+    "react-dom": ">= 16.8.0 <18.0.0",
+    "styled-components": ">= 5.0.0 <6.0.0"
+  },
+  "files": [
+    "dist"      
+  ]
+}
